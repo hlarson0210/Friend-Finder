@@ -15,43 +15,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
         </script>
-    <style>
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
@@ -120,8 +83,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value=2>
                                 <label class="form-check-label" for="gridRadios1">
                                     Disagree
                                 </label>
@@ -157,8 +119,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value=2>
                                 <label class="form-check-label" for="gridRadios2">
                                     Disagree
                                 </label>
@@ -194,8 +155,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value=2>
                                 <label class="form-check-label" for="gridRadios3">
                                     Disagree
                                 </label>
@@ -231,8 +191,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value=2>
                                 <label class="form-check-label" for="gridRadios4">
                                     Disagree
                                 </label>
@@ -268,8 +227,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value=2>
                                 <label class="form-check-label" for="gridRadios5">
                                     Disagree
                                 </label>
@@ -305,8 +263,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value=2>
                                 <label class="form-check-label" for="gridRadios6">
                                     Disagree
                                 </label>
@@ -342,8 +299,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value=2>
                                 <label class="form-check-label" for="gridRadios7">
                                     Disagree
                                 </label>
@@ -379,8 +335,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value=2>
                                 <label class="form-check-label" for="gridRadios8">
                                     Disagree
                                 </label>
@@ -417,8 +372,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value=2>
                                 <label class="form-check-label" for="gridRadios9">
                                     Disagree
                                 </label>
@@ -457,8 +411,7 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10" value=2
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10" value=2>
                                 <label class="form-check-label" for="gridRadios10">
                                     Disagree
                                 </label>
@@ -478,16 +431,26 @@
             </div>
         </div>
 
-        <button id="myBtn">Open Modal</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+        
+        <!-- Modal -->
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <p><img src='https://i.pinimg.com/originals/a8/25/dc/a825dccd7faa1451ab43a4076e201e4c.jpg'
-                        height="300px" width="300px"></p>
-                <p>Jason Derulo</p>
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Best Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h4 id="matchedUserName"></h4>
+                    <img id="matchedUserPhoto" src="" alt="Matched Friend Image" style="height: 300px; width: 300px">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
             </div>
+          </div>
         </div>
 
 
@@ -500,76 +463,44 @@
     </div>
 
     <script>
-        // Modal
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-
-        // This goes under the submit on click function
-        var selection = $("[name=gridRadios]");
-
-        // Push selected answers to new array
-        var newScores = [];
-        for (var i = 0; i < selection.length; i++) {
-            if (selection[i].checked) {
-                // var newArr = [];
-                var selValue = selection[i].value;
-                // var selValue = selection[i].value;
-                // newArr.push(selValue);
-                console.log(selValue);
-                newScores.push(selValue);
-            }
-        };
-        console.log(newScores);
-
-        // Here we grab the form elements
-        var newFriend = {
-            name: "Hayden",
-            // name: $('#reserve_name').val().trim(),
-            photo: "<img src='" + $('#reserve_photo').val().trim() + "https://i.pinimg.com/originals/a8/25/dc/a825dccd7faa1451ab43a4076e201e4c.jpg height='200px' width='200px''>",
-            // photo: "https://i.pinimg.com/originals/a8/25/dc/a825dccd7faa1451ab43a4076e201e4c.jpg",
-            scores:
-                newScores
-        };
-
-        console.log(newFriend.name + "\n" + newFriend.photo + "\n" + newFriend.scores);
-
-
-
 
         $(".submit").on("click", function () {
+            event.preventDefault();
+            var selection = $("[name=gridRadios]");
 
-        
+            var newScores = [];
+            for (var i = 0; i < selection.length; i++) {
+                if (selection[i].checked) {
+                    var selValue = selection[i].value;
+                    newScores.push(selValue);
+                }
+            };
 
-            // Here we get the location of the root page.
-            // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
+            var newFriend = {
+                name: $('#reserve_name').val().trim(),
+                photo: $('#reserve_photo').val().trim(),
+                scores: newScores
+            };
+
+            console.log(newFriend.name + "\n" + newFriend.photo + "\n" + newFriend.scores);
+
             var currentURL = window.location.origin;
 
-            $.post(currentURL + "/api/friends", newFriend,
+            $.post(currentURL + "/api/friends", newFriend).then(
                 function (data) {
-                    console.log(data);
 
-                    // this is where the modal will pop up
+                    $("#matchedUserName").text(data.name);
+                    $("#matchedUserPhoto").attr({
+                        src: data.photo
+                    });
+                    $("#friendModal").modal("toggle");
 
-
-
-                    // Clear the form when submitting
                     $('#reserve_name').val("");
                     $('#reserve_photo').val("");
+                    $(".form-check-input").attr('checked', false);
+                }
 
-                });
+            );
 
             return false;
 
