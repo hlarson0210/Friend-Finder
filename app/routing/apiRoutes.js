@@ -1,10 +1,11 @@
 var path = require("path");
-var friends = require("../data/friends.js");
+var friendsFile = require("../data/friends.js");
+var friends = friendsFile.friends;
 
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
-        return res.json(friends.friends);
+        return res.json(friends);
     });
 
     // Create New Friends - takes in JSON input
@@ -12,12 +13,12 @@ module.exports = function (app) {
         // req.body hosts is equal to the JSON post sent from the user
         // This works because of our body parsing middleware
         var newFriends = req.body;
-        let matchedFriend;
+        var matchedFriend;
 
         for (obj in friends) {
-            let sumDifference = 0;
+            var sumDifference = 0;
             for (val in friends[obj].scores) {
-                sumDifference += Math.abs(parseInt(friends[obj].scores[val]) - parseInt(newFriend.scores[val]));
+                sumDifference += Math.abs(parseInt(friends[obj].scores[val]) - parseInt(newFriends.scores[val]));
             }
             if (!matchedFriend) {
                 matchedFriend = friends[obj];
@@ -27,9 +28,9 @@ module.exports = function (app) {
                 matchedFriend.difference = sumDifference;
             }
         }
-        friends.friends.push(newFriends);
+        friends.push(newFriends);
 
-        res.json(newFriends);
+        res.json(matchedFriend);
     });
 
 }

@@ -26,7 +26,7 @@
             <br>
             <div class="text-center">
                 <a href="/"><button type="button" class="btn btn-lg btn-default"><span
-                            class="glyphicon glyphicon-home"></span></button></a>
+                            class="glyphicon glyphicon-home"></span> Home</button></a>
             </div>
         </div>
 
@@ -57,12 +57,12 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4 class="panel-title">Friends Survey</h4>
+                        <h4 class="panel-title">Random Facts Survey</h4>
                     </div>
                     <div class="panel-body">
                         <form role="form">
                             <div>
-                                <label for="">Question 1 - to match to other's answers:</label>
+                                <label for="">Question 1 - Pineapple belongs on pizza.</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value=5>
@@ -98,7 +98,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 2 - to match to other's answers:</label>
+                                <label for="">Question 2 - LeBron is better than Jordan.</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value=5>
@@ -134,7 +134,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 3 - to match to other's answers:</label>
+                                <label for="">Question 3 - Target is better than Walmart</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value=5>
@@ -170,7 +170,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 4 - to match to other's answers:</label>
+                                <label for="">Question 4 - Waking up early is better than staying up late</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value=5>
@@ -206,7 +206,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 5 - to match to other's answers:</label>
+                                <label for="">Question 5 - Coffee is better than tea</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value=5>
@@ -242,7 +242,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 6 - to match to other's answers:</label>
+                                <label for="">Question 6 - Left Twix is better than Right Twix:</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value=5>
@@ -278,7 +278,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 7 - to match to other's answers:</label>
+                                <label for="">Question 7 - Colder climates are better than warmer climates</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value=5>
@@ -314,7 +314,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 8 - to match to other's answers:</label>
+                                <label for="">Question 8 - La Croix is better than Bubbly</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value=5>
@@ -351,7 +351,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 9 - to match to other's answers:</label>
+                                <label for="">Question 9 - Sunrise is better than Sunset</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value=5>
@@ -387,7 +387,7 @@
                         <br>
                         <form role="form">
                             <div>
-                                <label for="">Question 10 - to match to other's answers:</label>
+                                <label for="">Question 10 - Beer is better than Wine</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10"
@@ -411,7 +411,8 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10" value=2>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10"
+                                    value=2>
                                 <label class="form-check-label" for="gridRadios10">
                                     Disagree
                                 </label>
@@ -431,43 +432,47 @@
             </div>
         </div>
 
-        
+
         <!-- Modal -->
-        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Best Match</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                    <h4 id="matchedUserName"></h4>
-                    <img id="matchedUserPhoto" src="" alt="Matched Friend Image" style="height: 300px; width: 300px">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="matchedUserName"></h4>
+                        <img id="matchedUserPhoto" src="" alt="Matched Friend Image"
+                            style="height: 300px; width: 300px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
 
 
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/friends">Friends API Link</a></p>
+                <p><a href="/api/friends">Friends API Link</a> | <a href="https://github.com/hlarson0210/Friend-Finder" target="_blank">Github Repo</a></p>
             </div>
         </footer>
     </div>
 
     <script>
 
-        $(".submit").on("click", function () {
-            event.preventDefault();
-            var selection = $("[name=gridRadios]");
 
+        function validateInputs(event) {
+            event.preventDefault();
+            var badInput = false;
+
+            var selection = $("[name=gridRadios]");
             var newScores = [];
             for (var i = 0; i < selection.length; i++) {
                 if (selection[i].checked) {
@@ -482,12 +487,27 @@
                 scores: newScores
             };
 
-            console.log(newFriend.name + "\n" + newFriend.photo + "\n" + newFriend.scores);
+            if (newFriend.name === "" || newFriend.photo === "") {
+                alert("You must enter a name and phto URL!");
+                badInput = true;
+            } else if (newScores.length < 10) {
+                alert("You must provide an answer for all questions!");
+                badInput = true;
+            } 
+            if (badInput) {
+                return false;
+            }
+            submitData(newFriend);
+        }
 
+        function submitData(newFriendsObj) {
             var currentURL = window.location.origin;
-
-            $.post(currentURL + "/api/friends", newFriend).then(
+            $.post(currentURL + "/api/friends", newFriendsObj).then(
                 function (data) {
+
+                    $('#reserve_name').val("");
+                    $('#reserve_photo').val("");
+                    $(".form-check-input").attr('checked', false);
 
                     $("#matchedUserName").text(data.name);
                     $("#matchedUserPhoto").attr({
@@ -495,16 +515,12 @@
                     });
                     $("#friendModal").modal("toggle");
 
-                    $('#reserve_name').val("");
-                    $('#reserve_photo').val("");
-                    $(".form-check-input").attr('checked', false);
                 }
-
             );
-
             return false;
+        }
 
-        });
+        $(".submit").on("click", validateInputs);
 
     </script>
 </body>

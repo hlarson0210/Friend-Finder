@@ -1,20 +1,23 @@
 console.log("friends loaded");
 
-exports.friends = [
+friends = [
     {
-        name: "Jason",
-        photo: "https://i.pinimg.com/originals/a8/25/dc/a825dccd7faa1451ab43a4076e201e4c.jpg",
+        name: "Hayden L",
+        photo: "https://hlarson0210.github.io/Basic-Portfolio/assets/images/Hayden.jpg",
         scores: [
+            1,
             2,
+            5,
+            3,
+            5,
             4,
             3,
             5,
-            5,
             3,
-            2,
-            4,
-            5,
-            2
+            4
         ]
     }
-]
+];
+
+
+module.exports = { friends: friends};
